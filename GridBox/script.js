@@ -1,6 +1,14 @@
 const container = document.querySelector("#grid-container");
 
-const gridSize = 16;
-const totalSquares = gridSize * gridSize;
+const squareSize = 16;
+const gridSize = squareSize * squareSize;
 
-const squareSizePercentage = totalSquares / 100;
+for (let i = 0; i < gridSize; i++) {
+  const square = document.createElement("div");
+  square.classList.add("grid-square");
+  container.appendChild(square);
+
+  square.addEventListener("mouseover", () => {
+    square.classList.add("active");
+  });
+}
