@@ -21,3 +21,88 @@ body {
   box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.2);
   padding: 20px;
 }
+
+.calculator-screen {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  width: 280px;
+  height: 80px;
+  background-color: #c3d2eb;
+  color: #2b3658;
+  font-size: 3.5rem;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  padding: 10px 25px;
+}
+
+.calculator-buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+
+.calculator-buttons button {
+  padding: 20px 0;
+  width: 100%;
+  background-color: #b3b7ce;
+  color: #2b3658;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.calculator-buttons button:hover {
+  background-color: #9da1b8; /
+}
+
+.calculator-buttons button:active {
+  background-color: #878ba2; 
+  transform: scale(0.95);   
+}
+
+.calculator-buttons .operator{
+    background-color: #58677e;
+    color: #ffffff;
+}
+.operator:hover {
+  background-color: #3b4b63 !important;
+}
+
+.all-clear {
+  background-color: #e11d48 !important; 
+  color: #ffffff !important;           
+}
+.all-clear:hover {
+  background-color: #be123c !important;
+}
+
+/* 3. Style the "=" (Equals) button */
+.equal-sign-btn {
+  grid-column: 4;
+  background-color: #367beb !important; 
+  color: #ffffff !important;           
+}
+.equal-sign-btn:hover {
+  background-color: #2563eb !important;
+}
+
+.decimal {
+    background-color: rgb(24, 41, 95) !important; 
+    color: #ffffff !important;           /* White text */
+}
+
+.decimal:hover {
+    background-color: rgb(12, 25, 68) !important; 
+}
+
+.calculator-buttons .zero-btn{
+    grid-column: 2;
+}
+
+.calculator-buttons .percent-btn{
+    background-color: #116b41;
+    color: #ffffff;
+}
